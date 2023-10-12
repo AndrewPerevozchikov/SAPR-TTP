@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3CA21F5-9E23-4D20-A284-6768AD97CBFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>E012.DomainModelServer</RootNamespace>
+    <AssemblyName>E012.DomainModelServer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="A118.DomainModel, Version=16.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\A118.DomainModel.16.10.0\lib\net45\A118.DomainModel.dll</HintPath>
+    </Reference>
+    <Reference Include="A118.EFDataSource, Version=1.16.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\A118.EFDataSource.1.16.8\lib\net45\A118.EFDataSource.dll</HintPath>
+    </Reference>
+    <Reference Include="A119.Logger, Version=1.16.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\A119.Logger.1.16.4\lib\net45\A119.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Entities\Main\AbstractSkat.cs" />
+    <Compile Include="Model\Entities\Main\AbstractStore.cs" />
+    <Compile Include="Model\Entities\Main\Attention.cs" />
+    <Compile Include="Model\Entities\Main\Avtor.cs" />
+    <Compile Include="Model\Entities\Main\Boddse.cs" />
+    <Compile Include="Model\Entities\Main\Coordinating.cs" />
+    <Compile Include="Model\Entities\Main\Equipment.cs" />
+    <Compile Include="Model\Entities\Main\FreeText.cs" />
+    <Compile Include="Model\Entities\Main\Image.cs" />
+    <Compile Include="Model\Entities\Main\Login.cs" />
+    <Compile Include="Model\Entities\Main\MainChangeSheet.cs" />
+    <Compile Include="Model\Entities\Main\Material.cs" />
+    <Compile Include="Model\Entities\Main\Mode.cs" />
+    <Compile Include="Model\Entities\Main\Operation.cs" />
+    <Compile Include="Model\Entities\Main\OperationInformation.cs" />
+    <Compile Include="Model\Entities\Main\Permission.cs" />
+    <Compile Include="Model\Entities\Main\Rigging.cs" />
+    <Compile Include="Model\Entities\Main\Soglizv.cs" />
+    <Compile Include="Model\Entities\Main\Sogltp.cs" />
+    <Compile Include="Model\Entities\Main\Soisp.cs" />
+    <Compile Include="Model\Entities\Main\TableTP.cs" />
+    <Compile Include="Model\Entities\Main\TechnicalArrays\ListMethodTransaction.cs" />
+    <Compile Include="Model\Entities\Main\TechnicalArrays\TypeArrays.cs" />
+    <Compile Include="Model\Entities\Main\TechnicalDetails.cs" />
+    <Compile Include="Model\Entities\Main\TECHNICAL\ListMethodTransaction.cs" />
+    <Compile Include="Model\Entities\Main\TECHNICAL\MethodTransaction.cs" />
+    <Compile Include="Model\Entities\Main\TECHNICAL\TypeArrays.cs" />
+    <Compile Include="Model\Entities\Main\Tlp.cs" />
+    <Compile Include="Model\Entities\Main\TotalInformation.cs" />
+    <Compile Include="Model\Entities\Main\Trek.cs" />
+    <Compile Include="Model\Entities\Main\TrekInformation.cs" />
+    <Compile Include="Model\Entities\Main\TTP.cs" />
+    <Compile Include="Model\Entities\Main\TTPForRead.cs" />
+    <Compile Include="Model\Entities\Main\Tttb.cs" />
+    <Compile Include="Model\Entities\Main\TypeState.cs" />
+    <Compile Include="Model\Entities\Result.cs" />
+    <Compile Include="Model\Entities\ResultClass.cs" />
+    <Compile Include="Model\Entities\Shablone\EquipmentDirectory.cs" />
+    <Compile Include="Model\Entities\Shablone\EquipmentTechnicalArrays.cs" />
+    <Compile Include="Model\Entities\Shablone\MaterialDirectory.cs" />
+    <Compile Include="Model\Entities\Shablone\MaterialTechnicalArrays.cs" />
+    <Compile Include="Model\Entities\Shablone\ModeTechnicalArrays.cs" />
+    <Compile Include="Model\Entities\Shablone\OperationDirectory.cs" />
+    <Compile Include="Model\Entities\Shablone\OperationTechnicalArrays.cs" />
+    <Compile Include="Model\Entities\Shablone\RiggingTechnicalArrays.cs" />
+    <Compile Include="Model\Entities\Shablone\Shablone\AllOperationInformation.cs" />
+    <Compile Include="Model\Entities\Shablone\Shablone\AllTrekInformation.cs" />
+    <Compile Include="Model\Entities\Shablone\Shablone\EquipmentShablone.cs" />
+    <Compile Include="Model\Entities\Shablone\Shablone\FreeTextShablone.cs" />
+    <Compile Include="Model\Entities\Shablone\Shablone\FreeTextTrekShablone.cs" />
+    <Compile Include="Model\Entities\Shablone\Shablone\MaterialShablone.cs" />
+    <Compile Include="Model\Entities\Shablone\Shablone\ModeShablone.cs" />
+    <Compile Include="Model\Entities\Shablone\Shablone\OperationShablone.cs" />
+    <Compile Include="Model\Entities\Shablone\Shablone\RiggingShablone.cs" />
+    <Compile Include="Model\Entities\Shablone\Shablone\TreeShablone.cs" />
+    <Compile Include="Model\Entities\Shablone\Shablone\TrekShablone.cs" />
+    <Compile Include="Model\Entities\Shablone\TechnicalArrays.cs" />
+    <Compile Include="Model\Entities\Shablone\TreeShablon.cs" />
+    <Compile Include="Model\Entities\Shablone\TreeShablonOperationOrTransit.cs" />
+    <Compile Include="Model\Entities\Shablone\TrekTechnicalArrays.cs" />
+    <Compile Include="Model\Entities\Shablone\TttbTechnicalArrays.cs" />
+    <Compile Include="Model\Entities\Shablone\TypeTechnicalArray.cs" />
+    <Compile Include="Model\Entities\TypeChapter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
